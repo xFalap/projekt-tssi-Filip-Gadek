@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Filip Gądek">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>09 · Właściwości związane z tłem — E-Podręcznik</title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<div class="kontener">
+
+  <div class="pasek-gorny">
+    <h1>Właściwości związane z tłem</h1>
+    <span class="nr-lekcji">Lekcja 09 / 18</span>
+  </div>
+
+  <div class="nawigacja">
+    <a href="8.html">&#8592; Poprzednia</a>
+    <a href="wybor.html">Spis lekcji</a>
+    <a href="index.html">Strona główna</a>
+    <a href="10.html">Następna &#8594;</a>
+  </div>
+
+  <div class="artykul">
+
+      <h2>Stylizowanie tła elementu</h2>
+      <p>CSS oferuje pełen zestaw właściwości do kontroli wyglądu tła dowolnego elementu.</p>
+      <table>
+        <tr><th>Właściwość</th><th>Opis</th><th>Przykład</th></tr>
+        <tr><td><code>background-color</code></td><td>Kolor tła</td><td><code>#ff0000</code>, <code>rgb(255,0,0)</code></td></tr>
+        <tr><td><code>background-image</code></td><td>Obrazek jako tło</td><td><code>url('obraz.jpg')</code></td></tr>
+        <tr><td><code>background-repeat</code></td><td>Powtarzanie obrazu</td><td><code>no-repeat</code>, <code>repeat-x</code></td></tr>
+        <tr><td><code>background-position</code></td><td>Pozycja tła</td><td><code>center</code>, <code>top right</code></td></tr>
+        <tr><td><code>background-size</code></td><td>Rozmiar tła</td><td><code>cover</code>, <code>contain</code>, <code>100%</code></td></tr>
+      </table>
+      <hr>
+      <h2>Przykład — background-size: cover</h2>
+      <p>Poniższy blok używa zdjęcia jako tła z <code>background-size: cover</code> i <code>background-position: center</code>:</p>
+      <div style="background: url('fala.jpg') no-repeat center / cover; height: 180px; border-radius: 6px; margin-bottom: 12px;"></div>
+      <pre>div {
+  background-image: url('fala.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}</pre>
+      <hr>
+      <h2>Skrócona właściwość background</h2>
+      <p>Wszystkie powyższe wartości można zapisać w jednej linii:</p>
+      <pre>background: url('fala.jpg') no-repeat center / cover;</pre>
+
+  </div>
+
+  <div class="stopka">
+    <span>E-Podręcznik HTML i CSS &copy; Filip Gądek 2Ia</span>
+    <span>Lekcja 09 / 18</span>
+  </div>
+
+</div>
+</body>
+</html>

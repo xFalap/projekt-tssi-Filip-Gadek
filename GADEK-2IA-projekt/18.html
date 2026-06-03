@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Filip Gądek">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>18 · Dziedziczenie w CSS — E-Podręcznik</title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<div class="kontener">
+
+  <div class="pasek-gorny">
+    <h1>Dziedziczenie w CSS</h1>
+    <span class="nr-lekcji">Lekcja 18 / 18</span>
+  </div>
+
+  <div class="nawigacja">
+    <a href="17.html">&#8592; Poprzednia</a>
+    <a href="wybor.html">Spis lekcji</a>
+    <a href="index.html">Strona główna</a>
+  </div>
+
+  <div class="artykul">
+
+      <h2>Co to jest dziedziczenie?</h2>
+      <p>Dziedziczenie w CSS oznacza, że część właściwości elementu nadrzędnego jest automatycznie przejmowana przez elementy potomne. Dzięki temu nie trzeba pisać tych samych reguł wielokrotnie.</p>
+      <hr>
+      <h2>Przykład</h2>
+      <pre>body {
+  color: blue;
+  font-family: Arial, sans-serif;
+}</pre>
+      <p>Elementy znajdujące się wewnątrz znacznika <code>body</code> odziedziczą kolor tekstu i krój czcionki.</p>
+      <hr>
+      <h2>Najczęściej dziedziczone właściwości</h2>
+      <ul class="punkty">
+        <li><code>color</code></li>
+        <li><code>font-family</code></li>
+        <li><code>font-size</code></li>
+        <li><code>font-style</code></li>
+        <li><code>font-weight</code></li>
+        <li><code>line-height</code></li>
+        <li><code>text-align</code></li>
+      </ul>
+      <hr>
+      <h2>Wymuszenie dziedziczenia</h2>
+      <pre>p {
+  color: inherit;
+}</pre>
+      <hr>
+      <h2>Podsumowanie</h2>
+      <p>Dziedziczenie upraszcza tworzenie i utrzymanie arkuszy stylów CSS, ponieważ pozwala ograniczyć ilość powtarzanego kodu.</p>
+
+  </div>
+
+  <div class="stopka">
+    <span>E-Podręcznik HTML i CSS &copy; Filip Gądek 2Ia</span>
+    <span>Lekcja 18 / 18</span>
+  </div>
+
+</div>
+</body>
+</html>

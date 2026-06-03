@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Filip Gądek">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12 · Pozycjonowanie elementów — E-Podręcznik</title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<div class="kontener">
+
+  <div class="pasek-gorny">
+    <h1>Pozycjonowanie elementów</h1>
+    <span class="nr-lekcji">Lekcja 12 / 18</span>
+  </div>
+
+  <div class="nawigacja">
+    <a href="11.html">&#8592; Poprzednia</a>
+    <a href="wybor.html">Spis lekcji</a>
+    <a href="index.html">Strona główna</a>
+    <a href="13.html">Następna &#8594;</a>
+  </div>
+
+  <div class="artykul">
+
+      <h2>Właściwość position</h2>
+      <table>
+        <tr><th>Wartość</th><th>Opis</th></tr>
+        <tr><td><code>static</code></td><td>Domyślne — element w naturalnym strumieniu dokumentu</td></tr>
+        <tr><td><code>relative</code></td><td>Przesunięcie względem własnej pozycji pierwotnej</td></tr>
+        <tr><td><code>absolute</code></td><td>Pozycja względem najbliższego pozycjonowanego przodka</td></tr>
+        <tr><td><code>fixed</code></td><td>Zablokowany w oknie — nie przewija się ze stroną</td></tr>
+        <tr><td><code>sticky</code></td><td>Kombinacja relative i fixed — przykleja się po przewinięciu</td></tr>
+      </table>
+      <hr>
+      <h2>Z-index — warstwy</h2>
+      <p>Właściwość <code>z-index</code> określa kolejność nakładania elementów na osi Z. Wyższa wartość = element na wierzchu.</p>
+      <div class="demo-zindeksu">
+        <div class="zbox" id="zk1">z:1</div>
+        <div class="zbox" id="zk2">z:3</div>
+        <div class="zbox" id="zk3">z:2</div>
+      </div>
+      <hr>
+      <h2>Właściwość overflow</h2>
+      <ul class="punkty">
+        <li><code>visible</code> — treść wystaje poza blok (domyślne)</li>
+        <li><code>hidden</code> — treść jest obcinana</li>
+        <li><code>scroll</code> — pojawia się pasek przewijania</li>
+        <li><code>auto</code> — pasek tylko gdy potrzebny</li>
+      </ul>
+
+  </div>
+
+  <div class="stopka">
+    <span>E-Podręcznik HTML i CSS &copy; Filip Gądek 2Ia</span>
+    <span>Lekcja 12 / 18</span>
+  </div>
+
+</div>
+</body>
+</html>

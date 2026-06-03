@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Filip Gądek">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11 · Mapy odsyłaczy (Image Maps) — E-Podręcznik</title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<div class="kontener">
+
+  <div class="pasek-gorny">
+    <h1>Mapy odsyłaczy (Image Maps)</h1>
+    <span class="nr-lekcji">Lekcja 11 / 18</span>
+  </div>
+
+  <div class="nawigacja">
+    <a href="10.html">&#8592; Poprzednia</a>
+    <a href="wybor.html">Spis lekcji</a>
+    <a href="index.html">Strona główna</a>
+    <a href="12.html">Następna &#8594;</a>
+  </div>
+
+  <div class="artykul">
+
+      <h2>Czym jest mapa odsyłaczy?</h2>
+      <p>Mapa odsyłaczy pozwala podzielić jeden obraz na niezależne, klikalne strefy — każda z nich może prowadzić do innego odnośnika.</p>
+      <hr>
+      <h2>Struktura kodu</h2>
+      <pre>&lt;img src="mapa.png" alt="Mapa" usemap="#moja-mapa"&gt;
+
+&lt;map name="moja-mapa"&gt;
+  &lt;area shape="rect" coords="0,0,100,100" href="sekcja1.html" alt="Sekcja 1"&gt;
+  &lt;area shape="circle" coords="200,150,60" href="sekcja2.html" alt="Sekcja 2"&gt;
+&lt;/map&gt;</pre>
+      <hr>
+      <h2>Typy kształtów (atrybut shape)</h2>
+      <table>
+        <tr><th>Wartość</th><th>Kształt</th><th>Format coords</th></tr>
+        <tr><td><code>rect</code></td><td>Prostokąt</td><td>x1, y1, x2, y2</td></tr>
+        <tr><td><code>circle</code></td><td>Koło</td><td>x, y, promień</td></tr>
+        <tr><td><code>poly</code></td><td>Wielokąt</td><td>x1,y1, x2,y2, x3,y3...</td></tr>
+      </table>
+
+  </div>
+
+  <div class="stopka">
+    <span>E-Podręcznik HTML i CSS &copy; Filip Gądek 2Ia</span>
+    <span>Lekcja 11 / 18</span>
+  </div>
+
+</div>
+</body>
+</html>

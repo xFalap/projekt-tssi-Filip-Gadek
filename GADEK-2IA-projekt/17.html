@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Filip Gądek">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>17 · Obsługa multimediów na stronie — E-Podręcznik</title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<div class="kontener">
+
+  <div class="pasek-gorny">
+    <h1>Obsługa multimediów na stronie</h1>
+    <span class="nr-lekcji">Lekcja 17 / 18</span>
+  </div>
+
+  <div class="nawigacja">
+    <a href="16.html">&#8592; Poprzednia</a>
+    <a href="wybor.html">Spis lekcji</a>
+    <a href="index.html">Strona główna</a>
+    <a href="18.html">Następna &#8594;</a>
+  </div>
+
+  <div class="artykul">
+
+      <h2>Multimedia w HTML5</h2>
+      <p>HTML5 wprowadził natywną obsługę multimediów — przeglądarki mogą odtwarzać dźwięk i wideo bez zewnętrznych wtyczek.</p>
+      <hr>
+      <h2>Dźwięk — &lt;audio&gt;</h2>
+      <p>Znacznik <code>&lt;audio&gt;</code> osadza odtwarzacz plików muzycznych. Atrybut <code>controls</code> renderuje domyślny panel sterowania.</p>
+      <pre>&lt;audio src="muzyka.mp3" controls&gt;&lt;/audio&gt;</pre>
+      <p>Obsługiwane formaty: <code>.mp3</code>, <code>.wav</code>, <code>.ogg</code></p>
+      <hr>
+      <h2>Wideo — &lt;video&gt;</h2>
+      <p>Znacznik <code>&lt;video&gt;</code> osadza odtwarzacz wideo bezpośrednio na stronie.</p>
+      <pre>&lt;video src="film.mp4" width="640" controls&gt;&lt;/video&gt;</pre>
+      <p>Obsługiwane formaty: <code>.mp4</code>, <code>.webm</code>, <code>.ogg</code></p>
+      <hr>
+      <h2>Atrybuty sterujące</h2>
+      <table>
+        <tr><th>Atrybut</th><th>Opis</th></tr>
+        <tr><td><code>controls</code></td><td>Wyświetla panel sterowania (play, pauza, głośność)</td></tr>
+        <tr><td><code>autoplay</code></td><td>Odtwarzanie automatyczne po załadowaniu strony</td></tr>
+        <tr><td><code>loop</code></td><td>Odtwarzanie w pętli</td></tr>
+        <tr><td><code>muted</code></td><td>Domyślne wyciszenie (wymagane do autoplay)</td></tr>
+        <tr><td><code>poster</code></td><td>Miniatura wideo przed odtworzeniem (tylko &lt;video&gt;)</td></tr>
+      </table>
+
+  </div>
+
+  <div class="stopka">
+    <span>E-Podręcznik HTML i CSS &copy; Filip Gądek 2Ia</span>
+    <span>Lekcja 17 / 18</span>
+  </div>
+
+</div>
+</body>
+</html>

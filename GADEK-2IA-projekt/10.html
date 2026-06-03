@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Filip Gądek">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 · Układy stron i struktura semantyczna — E-Podręcznik</title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<div class="kontener">
+
+  <div class="pasek-gorny">
+    <h1>Układy stron i struktura semantyczna</h1>
+    <span class="nr-lekcji">Lekcja 10 / 18</span>
+  </div>
+
+  <div class="nawigacja">
+    <a href="9.html">&#8592; Poprzednia</a>
+    <a href="wybor.html">Spis lekcji</a>
+    <a href="index.html">Strona główna</a>
+    <a href="11.html">Następna &#8594;</a>
+  </div>
+
+  <div class="artykul">
+
+      <h2>Makieta strony oparta na Float</h2>
+      <p>Klasyczna technika budowania układów stron polega na wykorzystaniu właściwości <code>float</code> do ustawienia bloczków obok siebie oraz <code>clear: both</code> do czyszczenia przepływu przed stopką.</p>
+      <div class="demo-ukladu">
+        <div class="d-naglowek">HEADER</div>
+        <div class="d-srodek">
+          <div class="d-bok">ASIDE</div>
+          <div class="d-glowna">ARTICLE</div>
+        </div>
+        <div class="d-stopka">FOOTER</div>
+      </div>
+      <hr>
+      <h2>Menu poziome</h2>
+      <p>Menu poziome tworzymy zmieniając domyślne wyświetlanie elementów listy za pomocą <code>display: inline-block</code> lub Flexbox (<code>display: flex</code>).</p>
+      <div class="demo-menu">
+        <a href="#">Opcja 1</a>
+        <a href="#">Opcja 2</a>
+        <a href="#">Opcja 3</a>
+      </div>
+      <hr>
+      <h2>Semantyczne znaczniki HTML5</h2>
+      <ul class="punkty">
+        <li><code>&lt;header&gt;</code> — nagłówek strony lub sekcji</li>
+        <li><code>&lt;nav&gt;</code> — blok nawigacyjny</li>
+        <li><code>&lt;main&gt;</code> — główna treść dokumentu</li>
+        <li><code>&lt;aside&gt;</code> — treść poboczna (sidebar)</li>
+        <li><code>&lt;article&gt;</code> — samodzielna treść (wpis, artykuł)</li>
+        <li><code>&lt;footer&gt;</code> — stopka strony lub sekcji</li>
+      </ul>
+
+  </div>
+
+  <div class="stopka">
+    <span>E-Podręcznik HTML i CSS &copy; Filip Gądek 2Ia</span>
+    <span>Lekcja 10 / 18</span>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Filip Gądek">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>07 · Arkusze stylów i CSS — E-Podręcznik</title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<div class="kontener">
+
+  <div class="pasek-gorny">
+    <h1>Arkusze stylów i CSS</h1>
+    <span class="nr-lekcji">Lekcja 07 / 18</span>
+  </div>
+
+  <div class="nawigacja">
+    <a href="6.html">&#8592; Poprzednia</a>
+    <a href="wybor.html">Spis lekcji</a>
+    <a href="index.html">Strona główna</a>
+    <a href="8.html">Następna &#8594;</a>
+  </div>
+
+  <div class="artykul">
+
+      <h2>Trzy sposoby dodawania CSS</h2>
+      <h3>1 — Styl zewnętrzny (zalecany)</h3>
+      <p>Style przechowywane w osobnym pliku <code>.css</code>, linkowanym w sekcji <code>&lt;head&gt;</code>. Pozwala zarządzać wyglądem wielu stron z jednego miejsca.</p>
+      <pre>&lt;link rel="stylesheet" href="styl.css"&gt;</pre>
+      <h3>2 — Styl wewnętrzny</h3>
+      <p>Style pisane bezpośrednio w sekcji <code>&lt;head&gt;</code> w znaczniku <code>&lt;style&gt;</code>. Dotyczy tylko jednej strony.</p>
+      <pre>&lt;style&gt;
+  p { color: red; }
+&lt;/style&gt;</pre>
+      <h3>3 — Styl liniowy (inline)</h3>
+      <p>Dopisywany bezpośrednio w znaczniku HTML atrybutem <code>style</code>. Najtrudniejszy do utrzymania.</p>
+      <pre>&lt;p style="color: red; font-size: 14px;"&gt;Tekst&lt;/p&gt;</pre>
+      <hr>
+      <h2>Budowa reguły CSS</h2>
+      <pre>selektor {
+    właściwość: wartość;
+    właściwość2: wartość2;
+}</pre>
+
+  </div>
+
+  <div class="stopka">
+    <span>E-Podręcznik HTML i CSS &copy; Filip Gądek 2Ia</span>
+    <span>Lekcja 07 / 18</span>
+  </div>
+
+</div>
+</body>
+</html>

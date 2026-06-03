@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Filip Gądek">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05 · Adresowanie w HTML — E-Podręcznik</title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<div class="kontener">
+
+  <div class="pasek-gorny">
+    <h1>Adresowanie w HTML</h1>
+    <span class="nr-lekcji">Lekcja 05 / 18</span>
+  </div>
+
+  <div class="nawigacja">
+    <a href="4.html">&#8592; Poprzednia</a>
+    <a href="wybor.html">Spis lekcji</a>
+    <a href="index.html">Strona główna</a>
+    <a href="6.html">Następna &#8594;</a>
+  </div>
+
+  <div class="artykul">
+
+      <h2>Hiperłącza — znacznik &lt;a&gt;</h2>
+      <p>Do tworzenia hiperłączy używamy znacznika <code>&lt;a&gt;</code> z atrybutem <code>href</code> wskazującym cel odnośnika.</p>
+      <pre>&lt;a href="strona.html"&gt;Przejdź do strony&lt;/a&gt;</pre>
+      <hr>
+      <h2>Rodzaje odnośników</h2>
+      <ul class="punkty">
+        <li>Plik lokalny: <code>href="drugi.html"</code></li>
+        <li>Adres e-mail: <code>href="mailto:przyklad@mail.com"</code></li>
+        <li>Numer telefonu: <code>href="tel:+48123456789"</code></li>
+        <li>Zewnętrzna strona: <code>href="https://example.com"</code></li>
+      </ul>
+      <hr>
+      <h2>Kotwice (Anchors)</h2>
+      <p>Jeśli przypiszemy elementowi unikatowy <code>id</code>, możemy tworzyć odnośniki prowadzące bezpośrednio do tej sekcji za pomocą znaku <code>#</code>.</p>
+      <pre>&lt;!-- Element docelowy --&gt;
+&lt;h2 id="sekcja1"&gt;Sekcja 1&lt;/h2&gt;
+
+&lt;!-- Odnośnik do kotwicy --&gt;
+&lt;a href="#sekcja1"&gt;Idź do sekcji 1&lt;/a&gt;</pre>
+
+  </div>
+
+  <div class="stopka">
+    <span>E-Podręcznik HTML i CSS &copy; Filip Gądek 2Ia</span>
+    <span>Lekcja 05 / 18</span>
+  </div>
+
+</div>
+</body>
+</html>

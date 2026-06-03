@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Filip Gądek">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>15 · Animacje w CSS — E-Podręcznik</title>
+  <link rel="stylesheet" href="styl.css">
+  <style>
+    .demo-animacji {
+      width: 80px; height: 80px;
+      background: #2c5f8a;
+      margin: 24px 0;
+      animation: demoAnim 3s ease-in-out infinite;
+    }
+    @keyframes demoAnim {
+      0%   { background: #2c5f8a; transform: scale(1) rotate(0deg); }
+      50%  { background: #c0392b; transform: scale(1.2) rotate(10deg); }
+      100% { background: #2c5f8a; transform: scale(1) rotate(0deg); }
+    }
+  </style>
+</head>
+<body>
+<div class="kontener">
+
+  <div class="pasek-gorny">
+    <h1>Animacje w CSS</h1>
+    <span class="nr-lekcji">Lekcja 15 / 18</span>
+  </div>
+
+  <div class="nawigacja">
+    <a href="14.html">&#8592; Poprzednia</a>
+    <a href="wybor.html">Spis lekcji</a>
+    <a href="index.html">Strona główna</a>
+    <a href="16.html">Następna &#8594;</a>
+  </div>
+
+  <div class="artykul">
+
+      <h2>Reguła @keyframes</h2>
+      <p>Animacje CSS definiujemy za pomocą reguły <code>@keyframes</code>, w której opisujemy stany elementu w kolejnych momentach animacji. Nie wymaga JavaScript.</p>
+      <p>Etapy określamy słowami <code>from</code>/<code>to</code> lub wartościami procentowymi (<code>0%</code>–<code>100%</code>).</p>
+      <pre>@keyframes mojaAnimacja {
+  0%   { background-color: #e8380d; transform: scale(1); }
+  50%  { background-color: #1a56d6; transform: scale(1.2); }
+  100% { background-color: #e8380d; transform: scale(1); }
+}</pre>
+      <div class="demo-animacji"></div>
+      <hr>
+      <h2>Właściwości sterujące animacją</h2>
+      <table>
+        <tr><th>Właściwość</th><th>Opis</th><th>Przykład</th></tr>
+        <tr><td><code>animation-name</code></td><td>Nazwa z @keyframes</td><td><code>mojaAnimacja</code></td></tr>
+        <tr><td><code>animation-duration</code></td><td>Czas trwania cyklu</td><td><code>2s</code>, <code>500ms</code></td></tr>
+        <tr><td><code>animation-iteration-count</code></td><td>Liczba powtórzeń</td><td><code>3</code>, <code>infinite</code></td></tr>
+        <tr><td><code>animation-timing-function</code></td><td>Krzywa tempa</td><td><code>ease-in-out</code></td></tr>
+        <tr><td><code>animation-delay</code></td><td>Opóźnienie startu</td><td><code>1s</code></td></tr>
+        <tr><td><code>animation-direction</code></td><td>Kierunek odtwarzania</td><td><code>alternate</code></td></tr>
+      </table>
+
+  </div>
+
+  <div class="stopka">
+    <span>E-Podręcznik HTML i CSS &copy; Filip Gądek 2Ia</span>
+    <span>Lekcja 15 / 18</span>
+  </div>
+
+</div>
+</body>
+</html>
